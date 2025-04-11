@@ -92,6 +92,23 @@ section.resume-section {
   section.resume-section .resume-item .resume-date {
     min-width: none; }
 
+    .holder {
+      display: flex;
+      justify-content: center;
+  }
+  .imagem {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+  }
+  .imagem::after {
+    content: attr(data-title); /* estilo que coloco a legenda no lugar */
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+  }
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh; }
